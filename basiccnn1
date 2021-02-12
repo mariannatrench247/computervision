@@ -1,5 +1,28 @@
 #trained with cifar-10 
+#cifar : standard small, solved img dataset 
+#learning, practicing 
+#test for estimating performance of model, potential improvemens (?), load to make predictions on new data 
+
 
 import tensorflow as tf 
-from tensorflow.keras import datasets, layers, models 
+from tensorflow.keras import datasets, layers, models
 import matplotlib.pyplot as plt 
+from keras.datasets import cifar10 
+
+
+
+(trainX, trainy), (testX, testy) = cifar10.load_data()
+
+print('Train: X=%s, y=%s' % (trainX.shape, trainy.shape))
+print('Test: X=%s, y=%s' % (testX.shape, testy.shape))
+
+for i in range(9):
+	plt.subplot(330 + 1 + i)
+	plt.imshow(trainX[i])
+plt.show()
+
+
+
+
+::Variation 2:: 
+
