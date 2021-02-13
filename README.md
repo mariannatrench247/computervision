@@ -1,5 +1,5 @@
 #computervision#
-cnns, hybrids to scale to lite version
+cnns, hybrids to scale tf.lite
 ## ** Please note there are several variations per CNN file ** ## 
   ### This is for framework versions, coding styles and device use case 
 
